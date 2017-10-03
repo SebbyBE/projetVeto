@@ -1,0 +1,19 @@
+{
+  "name": "projetveto",
+  "version": "1.0.0",
+  "description": "projetVeto",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SebbyBE/projetVeto.git"
+  },
+  "author": "Sébastien PLACE",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SebbyBE/projetVeto/issues"
+  },
+  "homepage": "https://github.com/SebbyBE/projetVeto#readme"
+}
