@@ -1,0 +1,15 @@
+body{
+    height : 100%;
+    margin:0px;
+    padding:0px;
+    background-color: #1a1a1a ! important;
+}
+#content{
+    margin:0 auto;
+    top:50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background-color: #929292;
+    border: 1px solid white;
+}

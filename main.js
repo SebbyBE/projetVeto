@@ -1,4 +1,5 @@
 const express = require("express");
+const bodyParser = require("body-parser");
 const app = express();
 const server = require('http').createServer(app);
 
@@ -7,8 +8,17 @@ app.set('port', (process.env.PORT || 5000));
 
 app.use(express.static(__dirname + '/www'));
 
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+
 app.get('/', function(req, res) {
 	res.sendFile('www/index.html');
+});
+
+app.post('/login',function(req,res){
+	console.log("on essaye de se connecter");
+	res.sendStatus(404);
+	res.end();
 });
 
 
