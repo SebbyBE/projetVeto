@@ -17,7 +17,9 @@ app.get('/', function(req, res) {
 
 app.get('/login',function(req,res){
 	console.log("login check");
-	res.sendFile('www/login.html');
+	res.sendFile('./www/login.html',{
+		root:__dirname
+	});
 });
 
 app.post('/login',function(req,res){
