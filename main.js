@@ -15,6 +15,11 @@ app.get('/', function(req, res) {
 	res.sendFile('www/index.html');
 });
 
+app.get('/login',function(req,res){
+	console.log("login check");
+	res.sendFile('www/login.html');
+});
+
 app.post('/login',function(req,res){
 	console.log("on essaye de se connecter");
 	res.sendStatus(404);
