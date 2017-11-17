@@ -15,20 +15,6 @@ app.get('/', function(req, res) {
 	res.sendFile('www/index.html');
 });
 
-app.get('/login',function(req,res){
-	console.log("login check");
-	res.sendFile('./www/login.html',{
-		root:__dirname
-	});
-});
-
-app.post('/login',function(req,res){
-	console.log("on essaye de se connecter");
-	res.sendStatus(404);
-	res.end();
-});
-
-
 server.listen(app.get('port'), function() {
 	console.log("gestion-veto app is listening on port :  " + app.get('port'));
 });
